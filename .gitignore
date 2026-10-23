@@ -1,0 +1,30 @@
+
+
+# Python environment and IDE
+.venv/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# Dataset folders
+data/akurdi_recordings/
+data/fold*/
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# Large audio dataset
+data/UrbanSound8K.csv
+data/fold*/
+data/akurdi_recordings/
+
+# Python model files can be large
+# Keep these excluded unless you decide to publish them
+# models/*.pkl
