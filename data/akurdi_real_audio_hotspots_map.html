@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d17dd184dfcd82e4dfb27933027e4c09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d17dd184dfcd82e4dfb27933027e4c09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d17dd184dfcd82e4dfb27933027e4c09 = L.map(
+                "map_d17dd184dfcd82e4dfb27933027e4c09",
+                {
+                    center: [18.649777999999998, 73.7671192],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+
+            
+
+        
+    
+            var tile_layer_e720807d7f112c738da73176c968e6e0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e720807d7f112c738da73176c968e6e0.addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+            var circle_marker_8201b89f094df6f0427e9693f4b02af3 = L.circleMarker(
+                [18.65089, 73.778496],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+        var popup_8d8680365f83aaa6f6340a98bfa72f26 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_42a88f39f32d32020e778ad6d2bac598 = $(`<div id="html_42a88f39f32d32020e778ad6d2bac598" style="width: 100.0%; height: 100.0%;"><b>DY Patil Road</b><br>Recordings: 1<br>Priority events: 1<br>Event-based priority score: 100.0%<br><br><b>Audio predictions</b><br>dy_patil_road.wav: siren</div>`)[0];
+                popup_8d8680365f83aaa6f6340a98bfa72f26.setContent(html_42a88f39f32d32020e778ad6d2bac598);
+            
+        
+
+        circle_marker_8201b89f094df6f0427e9693f4b02af3.bindPopup(popup_8d8680365f83aaa6f6340a98bfa72f26)
+        ;
+
+        
+    
+    
+            circle_marker_8201b89f094df6f0427e9693f4b02af3.bindTooltip(
+                `<div>
+                     DY Patil Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f6198a1ce1fc1584324e5182cd61671 = L.circleMarker(
+                [18.6452, 73.7644],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+        var popup_5ae68151aaca87eefd2e666393295b85 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aa0e2febd289fddbd192f08f664810f9 = $(`<div id="html_aa0e2febd289fddbd192f08f664810f9" style="width: 100.0%; height: 100.0%;"><b>Gurudwara</b><br>Recordings: 1<br>Priority events: 1<br>Event-based priority score: 100.0%<br><br><b>Audio predictions</b><br>gurudwara.wav: siren</div>`)[0];
+                popup_5ae68151aaca87eefd2e666393295b85.setContent(html_aa0e2febd289fddbd192f08f664810f9);
+            
+        
+
+        circle_marker_4f6198a1ce1fc1584324e5182cd61671.bindPopup(popup_5ae68151aaca87eefd2e666393295b85)
+        ;
+
+        
+    
+    
+            circle_marker_4f6198a1ce1fc1584324e5182cd61671.bindTooltip(
+                `<div>
+                     Gurudwara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f4f36561e1cfa75d728141f8d33ed3f = L.circleMarker(
+                [18.6497, 73.7617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+        var popup_944c5b782c8543734f66ade7ecf0a18a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8c40bbf7615e39f765be67871f431663 = $(`<div id="html_8c40bbf7615e39f765be67871f431663" style="width: 100.0%; height: 100.0%;"><b>Dharmaraj Chowk</b><br>Recordings: 1<br>Priority events: 0<br>Event-based priority score: 0.0%<br><br><b>Audio predictions</b><br>dharamaraj_chowk.wav: children_playing</div>`)[0];
+                popup_944c5b782c8543734f66ade7ecf0a18a.setContent(html_8c40bbf7615e39f765be67871f431663);
+            
+        
+
+        circle_marker_5f4f36561e1cfa75d728141f8d33ed3f.bindPopup(popup_944c5b782c8543734f66ade7ecf0a18a)
+        ;
+
+        
+    
+    
+            circle_marker_5f4f36561e1cfa75d728141f8d33ed3f.bindTooltip(
+                `<div>
+                     Dharmaraj Chowk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8b8bb13ce0efad756ac0c85ef48dfbb = L.circleMarker(
+                [18.6548, 73.7663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+        var popup_313bf1e1f29a3aa3e603cd93d2200abb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_444356864b3d52d4f9fae22fc336c8ed = $(`<div id="html_444356864b3d52d4f9fae22fc336c8ed" style="width: 100.0%; height: 100.0%;"><b>Garden</b><br>Recordings: 1<br>Priority events: 0<br>Event-based priority score: 0.0%<br><br><b>Audio predictions</b><br>garden.wav: children_playing</div>`)[0];
+                popup_313bf1e1f29a3aa3e603cd93d2200abb.setContent(html_444356864b3d52d4f9fae22fc336c8ed);
+            
+        
+
+        circle_marker_f8b8bb13ce0efad756ac0c85ef48dfbb.bindPopup(popup_313bf1e1f29a3aa3e603cd93d2200abb)
+        ;
+
+        
+    
+    
+            circle_marker_f8b8bb13ce0efad756ac0c85ef48dfbb.bindTooltip(
+                `<div>
+                     Garden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71a7b11ee5e5a0bfff41f1e0a68090c1 = L.circleMarker(
+                [18.6483, 73.7647],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d17dd184dfcd82e4dfb27933027e4c09);
+        
+    
+        var popup_75195d097e870eb40376730b5779b88d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5662bd529beb54c668cdc8965fc29ac2 = $(`<div id="html_5662bd529beb54c668cdc8965fc29ac2" style="width: 100.0%; height: 100.0%;"><b>Pradhikaran</b><br>Recordings: 1<br>Priority events: 0<br>Event-based priority score: 0.0%<br><br><b>Audio predictions</b><br>pradhikaran.wav: dog_bark</div>`)[0];
+                popup_75195d097e870eb40376730b5779b88d.setContent(html_5662bd529beb54c668cdc8965fc29ac2);
+            
+        
+
+        circle_marker_71a7b11ee5e5a0bfff41f1e0a68090c1.bindPopup(popup_75195d097e870eb40376730b5779b88d)
+        ;
+
+        
+    
+    
+            circle_marker_71a7b11ee5e5a0bfff41f1e0a68090c1.bindTooltip(
+                `<div>
+                     Pradhikaran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_d17dd184dfcd82e4dfb27933027e4c09.fitBounds(
+                [[18.65089, 73.778496], [18.6452, 73.7644], [18.6497, 73.7617], [18.6548, 73.7663], [18.6483, 73.7647]],
+                {}
+            );
+        
+</script>
+</html>
